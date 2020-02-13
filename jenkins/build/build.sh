@@ -5,4 +5,4 @@ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 echo "*********Building Jar Image **********"
 echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 echo " "
-cd jenkins/build/ && docker-compose build --no-cache
+cd $WORKSPACE/jenkins/build/ && docker-compose build --no-cache
