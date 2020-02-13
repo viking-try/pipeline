@@ -1,0 +1,33 @@
+pipeline {
+
+  agent any
+
+  stages {
+    stage ('Build') {
+      steps {
+        sh 'echo building'
+      }
+    }
+    stage ('test') {
+      steps {
+        sh '''
+           echo test
+           '''
+      }
+    }
+    stage ('Push') {
+      steps {
+        sh 'echo "pushing image"'
+      }
+    }
+    stage ('deploy') {
+      steps {
+        sh 'echo deploy'
+      }
+    }
+
+  }
+
+
+}
+
