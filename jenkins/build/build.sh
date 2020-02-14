@@ -6,4 +6,4 @@ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 echo "*********Building Jar Image **********"
 echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 echo " "
-cd /jenkins/build/ && docker-compose build --no-cache
+cd /var/jenkins_home/workspace/pipeline-mvn-doc/jenkins/build/ && docker-compose build --no-cache
