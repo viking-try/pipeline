@@ -12,7 +12,7 @@ pipeline {
     stage ('test') {
       steps {
         sh '''
-           sh $WORKSPACE/jenkins/build/mvn.sh mvn test
+           sh $WORKSPACE/jenkins/test/mvn.sh mvn test
            '''
       }
     }
