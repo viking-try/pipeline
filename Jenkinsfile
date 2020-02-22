@@ -1,6 +1,11 @@
 pipeline {
 
   agent any
+  environment {
+  USERD = credentials('doku')
+  PASSD = credentials('dokp')
+
+  }
 
   stages {
     stage ('Build') {
