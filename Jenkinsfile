@@ -18,7 +18,7 @@ pipeline {
     }
     stage ('Push') {
       steps {
-        sh 'echo "pushing image"'
+        sh 'sh $WORKSPACE/jenkins/push/push.sh'
       }
     }
     stage ('deploy') {
