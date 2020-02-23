@@ -1,4 +1,4 @@
-echo $BUILDNUMBER > /tmp/.authfile
+echo $BUILD_NUMBER > /tmp/.authfile
 echo jar-exe >> /tmp/.authfile
 echo $PASSD >> /tmp/.authfile
 chmod 600 $WORKSPACE/file.pem 
