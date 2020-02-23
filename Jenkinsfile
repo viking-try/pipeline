@@ -28,7 +28,7 @@ pipeline {
     }
     stage ('deploy') {
       steps {
-        sh 'echo deploy'
+        sh 'sh $WORKSPACE/jenkins/deploy/deploy.sh'
       }
     }
 
