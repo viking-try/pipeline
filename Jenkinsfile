@@ -29,7 +29,10 @@ pipeline {
     }
     stage ('deploy') {
       steps {
-        sh 'sh $WORKSPACE/jenkins/deploy/deploy.sh'
+        withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'klkl', \
+                                             keyFileVariable: 'SSH_KEY')]) {
+          sh 'sh $WORKSPACE/jenkins/deploy/deploy.sh'
+        }
       }
     }
 
