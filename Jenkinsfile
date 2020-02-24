@@ -4,6 +4,7 @@ pipeline {
   environment {
   USERD = credentials('doku')
   PASSD = credentials('dokp')
+  RMIP = credentials('ipRM')
 
   }
 
